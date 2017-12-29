@@ -12,6 +12,7 @@
 		644434EE1FF6A243002CB572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644434EC1FF6A243002CB572 /* Main.storyboard */; };
 		644434F01FF6A243002CB572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 644434EF1FF6A243002CB572 /* Assets.xcassets */; };
 		644434F31FF6A243002CB572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644434F11FF6A243002CB572 /* LaunchScreen.storyboard */; };
+		644434FB1FF6AC55002CB572 /* StoreSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644434FA1FF6AC55002CB572 /* StoreSpeech.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		644434EF1FF6A243002CB572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		644434F21FF6A243002CB572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		644434F41FF6A243002CB572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		644434FA1FF6AC55002CB572 /* StoreSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSpeech.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		644434E71FF6A243002CB572 /* SpeechExample */ = {
 			isa = PBXGroup;
 			children = (
+				644434FE1FF6E8A5002CB572 /* view */,
+				644434FD1FF6E89F002CB572 /* model */,
+				644434FC1FF6E88C002CB572 /* controller */,
+				644434FF1FF6E8B7002CB572 /* support files */,
 				644434E81FF6A243002CB572 /* AppDelegate.swift */,
-				644434EA1FF6A243002CB572 /* ViewController.swift */,
-				644434EC1FF6A243002CB572 /* Main.storyboard */,
-				644434EF1FF6A243002CB572 /* Assets.xcassets */,
-				644434F11FF6A243002CB572 /* LaunchScreen.storyboard */,
-				644434F41FF6A243002CB572 /* Info.plist */,
 			);
 			path = SpeechExample;
+			sourceTree = "<group>";
+		};
+		644434FC1FF6E88C002CB572 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				644434EA1FF6A243002CB572 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		644434FD1FF6E89F002CB572 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				644434FA1FF6AC55002CB572 /* StoreSpeech.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		644434FE1FF6E8A5002CB572 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				644434EC1FF6A243002CB572 /* Main.storyboard */,
+				644434F11FF6A243002CB572 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		644434FF1FF6E8B7002CB572 /* support files */ = {
+			isa = PBXGroup;
+			children = (
+				644434F41FF6A243002CB572 /* Info.plist */,
+				644434EF1FF6A243002CB572 /* Assets.xcassets */,
+			);
+			path = "support files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				644434EB1FF6A243002CB572 /* ViewController.swift in Sources */,
+				644434FB1FF6AC55002CB572 /* StoreSpeech.swift in Sources */,
 				644434E91FF6A243002CB572 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +314,7 @@
 				DEVELOPMENT_TEAM = 533ZC86QCL;
 				INFOPLIST_FILE = SpeechExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = developer.vinhote.SpeechExample;
+				PRODUCT_BUNDLE_IDENTIFIER = example.developer.SpeechExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,7 +329,7 @@
 				DEVELOPMENT_TEAM = 533ZC86QCL;
 				INFOPLIST_FILE = SpeechExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = developer.vinhote.SpeechExample;
+				PRODUCT_BUNDLE_IDENTIFIER = example.developer.SpeechExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
