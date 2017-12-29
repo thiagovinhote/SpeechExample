@@ -13,6 +13,8 @@
 		644434F01FF6A243002CB572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 644434EF1FF6A243002CB572 /* Assets.xcassets */; };
 		644434F31FF6A243002CB572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644434F11FF6A243002CB572 /* LaunchScreen.storyboard */; };
 		644434FB1FF6AC55002CB572 /* StoreSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644434FA1FF6AC55002CB572 /* StoreSpeech.swift */; };
+		644435021FF6ECF4002CB572 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 644435001FF6ECF4002CB572 /* LICENSE */; };
+		644435031FF6ECF4002CB572 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 644435011FF6ECF4002CB572 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		644434F21FF6A243002CB572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		644434F41FF6A243002CB572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		644434FA1FF6AC55002CB572 /* StoreSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSpeech.swift; sourceTree = "<group>"; };
+		644435001FF6ECF4002CB572 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		644435011FF6ECF4002CB572 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		644434FF1FF6E8B7002CB572 /* support files */ = {
 			isa = PBXGroup;
 			children = (
+				644435001FF6ECF4002CB572 /* LICENSE */,
+				644435011FF6ECF4002CB572 /* README.md */,
 				644434F41FF6A243002CB572 /* Info.plist */,
 				644434EF1FF6A243002CB572 /* Assets.xcassets */,
 			);
@@ -160,6 +166,8 @@
 			files = (
 				644434F31FF6A243002CB572 /* LaunchScreen.storyboard in Resources */,
 				644434F01FF6A243002CB572 /* Assets.xcassets in Resources */,
+				644435031FF6ECF4002CB572 /* README.md in Resources */,
+				644435021FF6ECF4002CB572 /* LICENSE in Resources */,
 				644434EE1FF6A243002CB572 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,12 +318,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 533ZC86QCL;
-				INFOPLIST_FILE = SpeechExample/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SpeechExample/support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.developer.SpeechExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,12 +335,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 533ZC86QCL;
-				INFOPLIST_FILE = SpeechExample/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SpeechExample/support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = example.developer.SpeechExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
