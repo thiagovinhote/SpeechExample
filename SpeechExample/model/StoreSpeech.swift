@@ -14,6 +14,7 @@ typealias callback = (_ text: String?, _ error: Error?) -> Void
 /// Completion usado na permissão do Speech Recognition
 typealias completionPermission = (_ status: Bool, _ message: String) -> Void
 
+// Mark - Classe
 class StoreSpeech: NSObject {
     // Mark - Ciclo de vida
     
@@ -38,19 +39,19 @@ class StoreSpeech: NSObject {
         return SFSpeechRecognizer(locale: Locale(identifier: "pt-BR"))!
     }()
     
-    /// Para alocar a fala como o usuário fala em tempo real e controla o armazenamento em buffer
+    /// Para alocar o discurso como o usuário fala em tempo real e controlar o armazenamento em buffer
     fileprivate var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     
-    /// Será usado para gerenciar, cancelar ou interromper a tarefa de reconhecimento atual
+    /// Será usado para gerenciar, cancelar ou interromper a tarefa de reconhecimento corrente
     fileprivate var recognitionTask: SFSpeechRecognitionTask?
     
     /// Processa o fluxo de áudio
-    /// - Darar atualizações quando o microfone receber áudio
+    /// - Dará atualizações quando o microfone receber áudio
     fileprivate let audioEngine: AVAudioEngine = {
         return AVAudioEngine()
     }()
     
-    /// Guardar o resultado obtido do rechocimento
+    /// Guardar o resultado obtido do reconhecimento
     fileprivate var speechResult: SFSpeechRecognitionResult = {
         return SFSpeechRecognitionResult()
     }()
