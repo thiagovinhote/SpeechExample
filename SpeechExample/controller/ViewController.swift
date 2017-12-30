@@ -15,33 +15,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        StoreSpeech.singleton.requestPermission { (status, message) in
-            self.buttonStart.isEnabled = status
-            self.textView.text = message
-        }
     }
 
     @IBAction func actionStart(_ sender: UIButton) {
-        if let text = sender.titleLabel?.text, text == "Parar" {
-            sender.setTitle("Iniciar", for: .normal)
-            StoreSpeech.singleton.stopRecording()
-            
-        } else {
-            sender.setTitle("Parar", for: .normal)
-            textView.text = nil
-            do {
-                try StoreSpeech.singleton.startRecording { (text, _) in
-                    if let text = text {
-                        self.textView.text = text
-                    }
-                }
-            } catch {
-                print(error)
-            }
-            
-        }
     }
     
 }
-
